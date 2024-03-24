@@ -1,0 +1,60 @@
+.A
+{
+    background-color: aqua;
+    border-style: dotted;
+    border-color:azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.B
+{
+    background-color:blue;
+    border-style: dashed;
+    border-color: lemonchiffon;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.C
+{
+    background-color:blueviolet;
+    border-style: groove;
+    border-color:chartreuse;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.D
+{
+    background-color:yellow ;
+    border-style:double;
+    border-color: brown;
+    font-family:cursive;
+}
+.one
+{
+font-size: 30px;
+width: 20px;
+margin: 20px;
+padding: 20px;
+margin-top:20px;
+}
+.two
+{
+font-size: 60px;
+width: 20px;
+margin: 20px;
+padding: 20px;
+margin-left:100px;
+}
+.three
+{
+font-size: 50px;
+width: 20px;
+margin: 20px;
+padding: 20px;
+margin-right: 50px;
+}
+.four
+{
+font-size: 40px;
+width: 20px;
+margin: 20px;
+padding: 20px;
+margin-inline-start: 40px;
+}
