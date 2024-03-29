@@ -1,6 +1,6 @@
 package assesment3;
 
-public class Trycatch1 {
+public class assesment_3a {
 
 	public static void main(String[] args) {
 		
