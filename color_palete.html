@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>  COLOR PALLETE </title>
+    <center>
+    <h1> Color pallete</h1>
+</center>
+    <style> 
+        .color_pallete_container{
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .Box-color{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .Text-box[type="text"] {
+            width: 300px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        
+        <div class="Text-box">
+            <input type="text" id="text-input" placeholder="enter a Text" oninput="changeRandomcolor()">
+        </div>
+    </center>
+    <center>
+        <div class="color_pallete_container">
+            <div class="Box-color" style="background-color: black;" onclick="CheckColorMatch('black')"></div>
+            <div class="Box-color" style="background-color: red;" onclick="CheckColorMatch('red')"></div>
+            <div class="Box-color" style="background-color: yellow;" onclick="CheckColorMatch('yellow')"></div>
+            <div class="Box-color" style="background-color:darkmagenta;" onclick="CheckColorMatch('darkmagenta')"></div>
+            <div class="Box-color" style="background-color: rgb(4, 188, 255);" onclick="CheckColorMatch('rgb')"></div>
+            <div class="Box-color" style="background-color: white;" onclick="CheckColorMatch('white')"></div>
+            <div class="Box-color" style="background-color: blue;" onclick="CheckColorMatch('blue')"></div>
+            <div class="Box-color" style="background-color: green;" onclick="CheckColorMatch('green')"></div>
+            <div class="Box-color" style="background-color:blueviolet;" onclick="CheckColorMatch('blueviolet')"></div>
+            <div class="Box-color" style="background-color:lawngreen;" onclick="CheckColorMatch('lawgreen')"></div>
+        </div>
+    </center>
+    <br><br>
+    <script>
+        function CheckColorMatch(colour)
+        {
+            var textInput= document.getElementById('text-input').style.color;
+            if(colour==textInput)
+            {
+                alert("sucessfully matched")
+                document.getElementById('text-input').value="";
+            }
+            else{
+                alert("please try again")
+            }
+            }
+            function changeRandomcolor()
+            {
+                var colors=document.getElementsByClassName("Box-color");
+                var randomColor = colors[Math.floor(Math.random()*colors.length)].style.backgroundcolor;
+                document.getElementById("text-input").style.color = randomColor;
+
+            }
+    </script>
+
+</body>
+</html>
